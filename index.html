@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandana Prajapati | Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<base target="_blank">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-mario"></div>
+        <div class="loading-text">VANDANA PRAJAPATI...</div>
+        <div class="loading-bar-container">
+            <div class="loading-bar" id="loading-bar"></div>
+        </div>
+    </div>
+
+    <!-- Time Counter -->
+    <div class="time-counter">
+        <div class="time-label">TIME</div>
+        <div id="game-time">000000</div>
+    </div>
+
+    <!-- Day/Night Toggle -->
+    <div class="day-night-toggle" id="day-night-toggle" title="Toggle Day/Night Mode">
+        ☀
+    </div>
+
+    <!-- Hidden ? Block -->
+    <div class="hidden-block" id="hidden-block" title="Mystery Block - Click 3 times!">
+    </div>
+
+    <!-- Pipe to Contact -->
+    <div class="pipe-link" id="pipe-link" title="Warp to Contact Section">
+    </div>
+
+    <!-- Clouds -->
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="cloud cloud-4"></div>
+
+    <!-- Konami Overlay -->
+    <div class="konami-overlay" id="konami-overlay">
+        <div class="konami-message">
+            <h2>⭐ SECRET UNLOCKED! ⭐</h2>
+            <p>You entered the legendary Konami Code!<br><br>🎮 30 Extra Lives Granted!<br>🏆 Achievement Unlocked: "True Gamer"<br><br>Thanks for playing!</p>
+            <button class="konami-close" id="konami-close">CONTINUE</button>
+        </div>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <header id="hero">
+        <div class="hero-avatar">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <!-- Hat -->
+                <rect x="12" y="4" width="40" height="12" fill="#E70012" stroke="#000" stroke-width="2"/>
+                <rect x="8" y="14" width="48" height="6" fill="#E70012" stroke="#000" stroke-width="2"/>
+                <!-- Face -->
+                <rect x="16" y="18" width="32" height="20" fill="#FFCC99" stroke="#000" stroke-width="2"/>
+                <!-- Eyes -->
+                <rect x="20" y="22" width="6" height="8" fill="#000"/>
+                <rect x="38" y="22" width="6" height="8" fill="#000"/>
+                <!-- Mustache -->
+                <rect x="18" y="32" width="28" height="6" fill="#000"/>
+                <rect x="14" y="34" width="6" height="4" fill="#000"/>
+                <rect x="44" y="34" width="6" height="4" fill="#000"/>
+                <!-- Body -->
+                <rect x="20" y="38" width="24" height="16" fill="#0099CC" stroke="#000" stroke-width="2"/>
+                <!-- Buttons -->
+                <rect x="24" y="42" width="4" height="4" fill="#FFD700" stroke="#000" stroke-width="1"/>
+                <rect x="36" y="42" width="4" height="4" fill="#FFD700" stroke="#000" stroke-width="1"/>
+                <!-- Arms -->
+                <rect x="8" y="40" width="12" height="10" fill="#E70012" stroke="#000" stroke-width="2"/>
+                <rect x="44" y="40" width="12" height="10" fill="#E70012" stroke="#000" stroke-width="2"/>
+                <!-- Hands -->
+                <rect x="4" y="48" width="10" height="8" fill="#FFCC99" stroke="#000" stroke-width="2"/>
+                <rect x="50" y="48" width="10" height="8" fill="#FFCC99" stroke="#000" stroke-width="2"/>
+            </svg>
+        </div>
+
+        <h1 class="hero-name">VANDANA PRAJAPATI</h1>
+        <p class="hero-tagline">Level 1-1:AI & Data Science & Full Stack Developer</p>
+
+        <div class="coin-container">
+            <div class="coin" onclick="playCoinSound()" title="Coin!"></div>
+            <div class="coin" onclick="playCoinSound()" title="Coin!"></div>
+            <div class="coin" onclick="playCoinSound()" title="Coin!"></div>
+            <div class="coin" onclick="playCoinSound()" title="Coin!"></div>
+            <div class="coin" onclick="playCoinSound()" title="Coin!"></div>
+        </div>
+
+        <a href="#about" class="start-btn" onclick="playStartSound()">PRESS START</a>
+    </header>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">
+            <span class="flag-icon"></span>
+            WORLD 1-1: ABOUT ME
+        </h2>
+
+        <div class="about-box">
+            <p class="about-text">
+                Hello! I'm <strong>Vandana Prajapati</strong>, a passionate <strong>Software Engineer</strong> and <strong>Full Stack Developer</strong> based in India. Just like Mario collects power-ups on his journey, I'm constantly leveling up my skills and taking on new challenges in the world of technology.
+                <br><br>
+                I specialize in building <strong>scalable web applications</strong>, creating <strong>pixel-perfect user interfaces</strong>, and writing <strong>clean, maintainable code</strong>. My tech stack includes modern frontend frameworks like React, backend technologies like Node.js, and databases like MongoDB and PostgreSQL.
+                <br><br>
+                When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of chai while debugging code. I believe in continuous learning and turning complex problems into simple, elegant solutions.
+                <br><br>
+                <strong>Let's jump to the next level together!</strong> 🍄⭐
+            </p>
+
+            <div class="skills-row">
+                <div class="skill-mushroom">
+                    <div class="mushroom-icon"></div>
+                    <span>Problem Solver</span>
+                </div>
+                <div class="skill-mushroom">
+                    <div class="mushroom-icon"></div>
+                    <span>Team Player</span>
+                </div>
+                <div class="skill-mushroom">
+                    <div class="mushroom-icon"></div>
+                    <span>Fast Learner</span>
+                </div>
+                <div class="skill-mushroom">
+                    <div class="mushroom-icon"></div>
+                    <span>Creative Mind</span>
+                </div>
+                <div class="skill-mushroom">
+                    <div class="mushroom-icon"></div>
+                    <span>Detail Oriented</span>
+                </div>
+                <div class="skill-mushroom">
+                    <div class="mushroom-icon"></div>
+                    <span>Ship Fast</span>
+                </div>
+            </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills">
+        <h2 class="section-title">
+            <span class="flag-icon"></span>
+            INVENTORY (SKILLS)
+        </h2>
+
+        <div class="skills-grid">
+            <div class="skill-item">
+                <div class="question-block" data-skill="HTML5" onmouseenter="playBumpSound(); revealBlock(this)">
+                </div>
+                <div class="skill-name">HTML5</div>
+                <div class="health-bar">
+                    <div class="health-fill" data-width="95%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="question-block" data-skill="CSS3" onmouseenter="playBumpSound(); revealBlock(this)">
+                </div>
+                <div class="skill-name">CSS3</div>
+                <div class="health-bar">
+                    <div class="health-fill" data-width="92%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="question-block" data-skill="JS" onmouseenter="playBumpSound(); revealBlock(this)">
+                </div>
+                <div class="skill-name">JavaScript</div>
+                <div class="health-bar">
+                    <div class="health-fill" data-width="90%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="question-block" data-skill="REACT" onmouseenter="playBumpSound(); revealBlock(this)">
+                </div>
+                <div class="skill-name">React.js</div>
+                <div class="health-bar">
+                    <div class="health-fill" data-width="88%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="question-block" data-skill="NODE" onmouseenter="playBumpSound(); revealBlock(this)">
+                </div>
+                <div class="skill-name">Node.js</div>
+                <div class="health-bar">
+                    <div class="health-fill" data-width="85%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="question-block" data-skill="PYTHON" onmouseenter="playBumpSound(); revealBlock(this)">
+                </div>
+                <div class="skill-name">Python</div>
+                <div class="health-bar">
+                    <div class="health-fill" data-width="80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="question-block" data-skill="GIT" onmouseenter="playBumpSound(); revealBlock(this)">
+                </div>
+                <div class="skill-name">Git & GitHub</div>
+                <div class="health-bar">
+                    <div class="health-fill" data-width="93%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="question-block" data-skill="SQL" onmouseenter="playBumpSound(); revealBlock(this)">
+                </div>
+                <div class="skill-name">java</div>
+                <div class="health-bar">
+                    <div class="health-fill" data-width="82%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects">
+        <h2 class="section-title">
+            <span class="flag-icon"></span>
+            LEVEL SELECT (PROJECTS)
+        </h2>
+
+        <div class="projects-grid">
+            <div class="level-card" onclick="playCoinSound()">
+                <div class="level-preview"></div>
+                <div class="level-info">
+                    <div class="level-number">WORLD 1-1</div>
+                    <div class="level-name">Developer Portfolio Website<br>A full-stack online shop with cart, checkout, and admin dashboard. Built with React + Node.js + PostgreSQL.</div>
+                    <a href="#" class="play-btn" onclick="event.stopPropagation()">PLAY LEVEL</a>
+                </div>
+            </div>
+
+            <div class="level-card" onclick="playCoinSound()">
+                <div class="level-preview"></div>
+                <div class="level-info">
+                    <div class="level-number">WORLD 1-2</div>
+                    <div class="level-name">Task Manager Dashboard<br>A responsive task management dashboard that allows users to create, update, and track tasks efficiently. Designed with a clean UI user experience.</div>
+                    <a href="#" class="play-btn" onclick="event.stopPropagation()">PLAY LEVEL</a>
+                </div>
+            </div>
+
+            <div class="level-card" onclick="playCoinSound()">
+                <div class="level-preview"></div>
+                <div class="level-info">
+                    <div class="level-number">WORLD 1-3</div>
+                    <div class="level-name">Animation Project<br>A creative animation project showcasing modern UI animations and transitions using CSS and JavaScript.visual experience through smooth effects.</div>
+                    <a href="#" class="play-btn" onclick="event.stopPropagation()">PLAY LEVEL</a>
+                </div>
+            </div>
+
+            <div class="level-card" onclick="playCoinSound()">
+                <div class="level-preview"></div>
+                <div class="level-info">
+                    <div class="level-number">WORLD 1-4</div>
+                    <div class="level-name">AI Chatbot<br>An AI-powered chatbot that interacts with users and provides responses based on natural language input. Designed to simulate human-like conversation and improve user engagement.</div>
+                    <a href="#" class="play-btn" onclick="event.stopPropagation()">PLAY LEVEL</a>
+                </div>
+            </div>
+
+            <div class="level-card" onclick="playCoinSound()">
+                <div class="level-preview"></div>
+                <div class="level-info">
+                    <div class="level-number">WORLD 2-1</div>
+                    <div class="level-name">Portfolio Generator<br>Dynamic portfolio builder for developers</div>
+                    <a href="#" class="play-btn" onclick="event.stopPropagation()">PLAY LEVEL</a>
+                </div>
+            </div>
+
+            <div class="level-card" onclick="playCoinSound()">
+                <div class="level-preview"></div>
+                <div class="level-info">
+                    <div class="level-number">WORLD 2-2</div>
+                    <div class="level-name">Object detection<br>This project uses a trained YOLO model for real-time object detection from images and webcam feeds accurately.</div>
+                    <a href="#" class="play-btn" onclick="event.stopPropagation()">PLAY LEVEL</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section id="experience">
+        <h2 class="section-title">
+            <span class="flag-icon"></span>
+            HIGH SCORE (EXPERIENCE)
+        </h2>
+
+        <div class="timeline-container">
+            <div class="timeline-path"></div>
+
+            <div class="timeline">
+                <div class="checkpoint">
+                    <div class="job-title">Frontend Developer</div>
+                    <div class="job-company">HTML, CSS, and JavaScript.</div>
+                    <div class="job-year">2024</div>
+                    <div class="job-score">5000 PTS</div>
+                </div>
+
+                <div class="checkpoint">
+                    <div class="job-title">React Developer</div>
+                    <div class="job-company">Developed modern web applications using React.js</div>
+                    <div class="job-year"> 2024–2025</div>
+                    <div class="job-score">3500 PTS</div>
+                </div>
+
+                <div class="checkpoint">
+                    <div class="job-title">AI & Data Science Learner</div>
+                    <div class="job-company">Used Python, data analysis, and basic models</div>
+                    <div class="job-year"> 2025–2026</div>
+                    <div class="job-score">2000 PTS</div>
+                </div>
+
+                <div class="checkpoint">
+                    <div class="job-title">Aspiring AI & Full Stack Developer</div>
+                    <div class="job-company">Used Python, data analysis, and basic models</div>
+                    <div class="job-year"> 2026–PRESENT</div>
+                    <div class="job-score">1000 PTS</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="high-score">
+            <div class="high-score-text">TOTAL SCORE: 11500 PTS</div>
+            <div class="high-score-sub">YEARS OF EXPERIENCE: 5+ | PROJECTS COMPLETED: 25+</div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">
+            <span class="flag-icon"></span>
+            GAME OVER / CONTINUE?
+        </h2>
+
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <label class="form-label">PLAYER NAME</label>
+                <input type="text" class="form-input" id="contact-name" placeholder="Enter your name..." required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">EMAIL ADDRESS</label>
+                <input type="email" class="form-input" id="contact-email" placeholder="Enter your email..." required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">SUBJECT</label>
+                <input type="text" class="form-input" id="contact-subject" placeholder="What is this about?" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">MESSAGE</label>
+                <textarea class="form-input" id="contact-message" rows="5" placeholder="Type your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submit-btn">
+                INSERT COIN TO CONTINUE
+            </button>
+        </form>
+
+        <div class="social-links">
+            <a href="https://github.com/vandanaprajapati" target="_blank" class="social-link" title="GitHub">
+                <span class="social-icon">👾</span>
+                <span class="social-text">GITHUB</span>
+            </a>
+            <a href="https://linkedin.com/in/vandanaprajapati" target="_blank" class="social-link" title="LinkedIn">
+                <span class="social-icon">💼</span>
+                <span class="social-text">LINKEDIN</span>
+            </a>
+            <a href="https://twitter.com/vandanaprajapati" target="_blank" class="social-link" title="Twitter/X">
+                <span class="social-icon">🐦</span>
+                <span class="social-text">TWITTER</span>
+            </a>
+            <a href="mailto:vandana.prajapati@email.com" class="social-link" title="Email">
+                <span class="social-icon">📧</span>
+                <span class="social-text">EMAIL</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>© 2024 <span>VANDANA PRAJAPATI</span> | ALL RIGHTS RESERVED</p>
+        <p style="margin-top: 10px; font-size: 8px;">BUILT WITH ❤️ AND PIXELS</p>
+    </footer>
+
+    <!-- Ground -->
+    <div class="ground"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
